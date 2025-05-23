@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Auto Ping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Web Auto Ping Tool</h1>
+
+        <div class="input-group">
+            <label for="targetInput">Target (IP or Domain):</label>
+            <input type="text" id="targetInput" placeholder="e.g., google.com or 8.8.8.8" value="google.com">
+        </div>
+
+        <div class="input-group">
+            <label for="intervalInput">Interval (seconds):</label>
+            <input type="number" id="intervalInput" value="5" min="1">
+        </div>
+
+        <div class="buttons">
+            <button id="startButton">Start Ping</button>
+            <button id="stopButton" disabled>Stop Ping</button>
+        </div>
+
+        <div class="results-container">
+            <h2>Ping Results</h2>
+            <div id="results" class="results-box">
+                <!-- Ping results will be appended here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
